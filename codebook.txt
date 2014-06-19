@@ -1,0 +1,181 @@
+This dataset contains data from a test and training database of wearable sensors. 
+
+Data was recorded for several subjects, while doing 6 different types of activities. 
+
+The activities were the following_
+
+1 WALKING
+
+2 WALKING_UPSTAIRS
+
+3 WALKING_DOWNSTAIRS
+
+4 SITTING
+
+5 STANDING
+
+6 LAYING
+
+
+The first column of the dataset contains the subject numbers.
+
+The second column contains the 6 different activities. 
+
+The following columns contain the mean of the data collected for the different features. 
+
+Details on data collection and the exact list 
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
+
+These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. 
+
+Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
+
+Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+mad(): Median absolute deviation 
+max(): Largest value in array
+min(): Smallest value in array
+sma(): Signal magnitude area
+energy(): Energy measure. Sum of the squares divided by the number of values. 
+iqr(): Interquartile range 
+entropy(): Signal entropy
+arCoeff(): Autorregresion coefficients with Burg order equal to 4
+correlation(): correlation coefficient between two signals
+maxInds(): index of the frequency component with largest magnitude
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+skewness(): skewness of the frequency domain signal 
+kurtosis(): kurtosis of the frequency domain signal 
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+angle(): Angle between to vectors.
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
+From the full dataset only those features were kept which contained data either on the mean or the standard deviation.
+
+The complete list of variables (with their column number) can be found below:
+
+
+"1" "subject"
+"2" "activity"
+"3" "Mean of timebodyaccelerometer-mean-x"
+"4" "Mean of timebodyaccelerometer-mean-y"
+"5" "Mean of timebodyaccelerometer-mean-z"
+"6" "Mean of timegravityaccelerometer-mean-x"
+"7" "Mean of timegravityaccelerometer-mean-y"
+"8" "Mean of timegravityaccelerometer-mean-z"
+"9" "Mean of timebodyaccelerometerjerk-mean-x"
+"10" "Mean of timebodyaccelerometerjerk-mean-y"
+"11" "Mean of timebodyaccelerometerjerk-mean-z"
+"12" "Mean of timebodygyroscope-mean-x"
+"13" "Mean of timebodygyroscope-mean-y"
+"14" "Mean of timebodygyroscope-mean-z"
+"15" "Mean of timebodygyroscopejerk-mean-x"
+"16" "Mean of timebodygyroscopejerk-mean-y"
+"17" "Mean of timebodygyroscopejerk-mean-z"
+"18" "Mean of timebodyaccelerometermagnitude-mean"
+"19" "Mean of timegravityaccelerometermagnitude-mean"
+"20" "Mean of timebodyaccelerometerjerkmagnitude-mean"
+"21" "Mean of timebodygyroscopemagnitude-mean"
+"22" "Mean of timebodygyroscopejerkmagnitude-mean"
+"23" "Mean of frequencybodyaccelerometer-mean-x"
+"24" "Mean of frequencybodyaccelerometer-mean-y"
+"25" "Mean of frequencybodyaccelerometer-mean-z"
+"26" "Mean of frequencybodyaccelerometer-meanfreq-x"
+"27" "Mean of frequencybodyaccelerometer-meanfreq-y"
+"28" "Mean of frequencybodyaccelerometer-meanfreq-z"
+"29" "Mean of frequencybodyaccelerometerjerk-mean-x"
+"30" "Mean of frequencybodyaccelerometerjerk-mean-y"
+"31" "Mean of frequencybodyaccelerometerjerk-mean-z"
+"32" "Mean of frequencybodyaccelerometerjerk-meanfreq-x"
+"33" "Mean of frequencybodyaccelerometerjerk-meanfreq-y"
+"34" "Mean of frequencybodyaccelerometerjerk-meanfreq-z"
+"35" "Mean of frequencybodygyroscope-mean-x"
+"36" "Mean of frequencybodygyroscope-mean-y"
+"37" "Mean of frequencybodygyroscope-mean-z"
+"38" "Mean of frequencybodygyroscope-meanfreq-x"
+"39" "Mean of frequencybodygyroscope-meanfreq-y"
+"40" "Mean of frequencybodygyroscope-meanfreq-z"
+"41" "Mean of frequencybodyaccelerometermagnitude-mean"
+"42" "Mean of frequencybodyaccelerometermagnitude-meanfreq"
+"43" "Mean of frequencybodybodyaccelerometerjerkmagnitude-mean"
+"44" "Mean of frequencybodybodyaccelerometerjerkmagnitude-meanfreq"
+"45" "Mean of frequencybodybodygyroscopemagnitude-mean"
+"46" "Mean of frequencybodybodygyroscopemagnitude-meanfreq"
+"47" "Mean of frequencybodybodygyroscopejerkmagnitude-mean"
+"48" "Mean of frequencybodybodygyroscopejerkmagnitude-meanfreq"
+"49" "Mean of angle(tbodyaccelerometermean,gravity)"
+"50" "Mean of angle(tbodyaccelerometerjerkmean),gravitymean)"
+"51" "Mean of angle(tbodygyroscopemean,gravitymean)"
+"52" "Mean of angle(tbodygyroscopejerkmean,gravitymean)"
+"53" "Mean of angle(x,gravitymean)"
+"54" "Mean of angle(y,gravitymean)"
+"55" "Mean of angle(z,gravitymean)"
+"56" "Mean of timebodyaccelerometer-std-x"
+"57" "Mean of timebodyaccelerometer-std-y"
+"58" "Mean of timebodyaccelerometer-std-z"
+"59" "Mean of timegravityaccelerometer-std-x"
+"60" "Mean of timegravityaccelerometer-std-y"
+"61" "Mean of timegravityaccelerometer-std-z"
+"62" "Mean of timebodyaccelerometerjerk-std-x"
+"63" "Mean of timebodyaccelerometerjerk-std-y"
+"64" "Mean of timebodyaccelerometerjerk-std-z"
+"65" "Mean of timebodygyroscope-std-x"
+"66" "Mean of timebodygyroscope-std-y"
+"67" "Mean of timebodygyroscope-std-z"
+"68" "Mean of timebodygyroscopejerk-std-x"
+"69" "Mean of timebodygyroscopejerk-std-y"
+"70" "Mean of timebodygyroscopejerk-std-z"
+"71" "Mean of timebodyaccelerometermagnitude-std"
+"72" "Mean of timegravityaccelerometermagnitude-std"
+"73" "Mean of timebodyaccelerometerjerkmagnitude-std"
+"74" "Mean of timebodygyroscopemagnitude-std"
+"75" "Mean of timebodygyroscopejerkmagnitude-std"
+"76" "Mean of frequencybodyaccelerometer-std-x"
+"77" "Mean of frequencybodyaccelerometer-std-y"
+"78" "Mean of frequencybodyaccelerometer-std-z"
+"79" "Mean of frequencybodyaccelerometerjerk-std-x"
+"80" "Mean of frequencybodyaccelerometerjerk-std-y"
+"81" "Mean of frequencybodyaccelerometerjerk-std-z"
+"82" "Mean of frequencybodygyroscope-std-x"
+"83" "Mean of frequencybodygyroscope-std-y"
+"84" "Mean of frequencybodygyroscope-std-z"
+"85" "Mean of frequencybodyaccelerometermagnitude-std"
+"86" "Mean of frequencybodybodyaccelerometerjerkmagnitude-std"
+"87" "Mean of frequencybodybodygyroscopemagnitude-std"
+"88" "Mean of frequencybodybodygyroscopejerkmagnitude-std"
